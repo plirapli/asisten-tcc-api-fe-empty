@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Data User</h1>
+    <form>
+      <span>
+        <label for="name">Nama</label>
+        <input
+          data-id
+          id="name"
+          type="text"
+          placeholder="Masukkan nama"
+          required
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="email">Email</label>
+        <input
+          data-id
+          id="email"
+          type="text"
+          placeholder="Masukkan email"
+          required
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="gender">Gender</label>
+        <input
+          data-id
+          id="gender"
+          type="text"
+          placeholder="Masukkan gender"
+          required
+        />
+      </span>
+      <button type="submit">Simpan</button>
+    </form>
+    <main style="margin-top: 1rem">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th colspan="2">Option</th>
+          </tr>
+        </thead>
+        <tbody id="table-user">
+          <tr>
+            <td>1</td>
+            <td class="name">awg</td>
+            <td class="email">awg@gmail.com</td>
+            <td class="gender">Male</td>
+            <td><button data-id="1" class="btn-edit">Edit</button></td>
+            <td><button data-id="1" class="btn-hapus">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="name">alek</td>
+            <td class="email">alek@gmail.com</td>
+            <td class="gender">Male</td>
+            <td><button data-id="2" class="btn-edit">Edit</button></td>
+            <td><button data-id="2" class="btn-hapus">Hapus</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td class="name">rafli</td>
+            <td class="email">rafli@gmail.com</td>
+            <td class="gender">Male</td>
+            <td><button data-id="3" class="btn-edit">Edit</button></td>
+            <td><button data-id="3" class="btn-hapus">Hapus</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
